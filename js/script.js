@@ -20,9 +20,6 @@ project 1 - A Random Quote Generator
 //document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
-
-
-
 // quote array
 var quotes = [
   [quote, 'What God intended for you goes far beyond anything you can imagine.',
