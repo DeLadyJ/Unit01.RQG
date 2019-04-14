@@ -43,15 +43,15 @@ var quotes = [
   tag, "Wisdom",
   citation, "Three Little Birds/, from the album Exodus",
   year, "1977"]
-
+];
 
 //loga quote to console
-console.log (quote);
+//console.log (quote);
 
 
 //colors used for array
-var colors = ['red', 'blue', 'green', 'yellow']
-setInterval(('Color'),3000);
+ var colors = ['red', 'blue', 'green', 'yellow'];
+//setInterval(('Color'),3000);
   
 //calls a random quote then returns the quote
 function getRandomQuote(){
@@ -61,7 +61,7 @@ function getRandomQuote(){
 
 
 //calls a random color then returns the color
-function getRandomColor(){
+function getRandomQuoteColor(){
     let randomNumber = Math.floor(Math.random() * color.length);
       return color(randomNumber);
   } 
@@ -83,8 +83,6 @@ console.log(quote);
 
 
 //This launches the quote when button is clicked
-
-
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
