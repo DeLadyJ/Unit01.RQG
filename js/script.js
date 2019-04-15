@@ -67,7 +67,7 @@ function getRandomQuoteColor(){
   } 
 
 
-//print function
+//print function, .innerHTML will get random quote, quote will display
 function printQuote()
 var quote = getRandomQuote;
 var htmlString = ("");
@@ -78,7 +78,9 @@ html += '<span class="citation">' + quote.citation + '</span>';
  }
  if (quote.year) {
   html += '<span class="year">' + quote.year + '</span>';
- }
+  document.getElementById('quote-box').InnerHTML = quotes[randomNumber];
+}
+
 console.log(quote);
 
 
