@@ -78,7 +78,11 @@ html += '<span class="citation">' + quote.citation + '</span>';
  }
  if (quote.year) {
   html += '<span class="year">' + quote.year + '</span>';
-  document.getElementById('quote-box').InnerHTML = quotes[randomNumber];
+
+}
+
+{
+  document.getElementById('quote-box').InnerHTML = quote;
 }
 
 console.log(quote);
