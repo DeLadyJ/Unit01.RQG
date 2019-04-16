@@ -73,6 +73,7 @@ var quote = getRandomQuote;
 var htmlString = ("");
 html += '<p class="quote">' + quote.quote + '<p/>';
 html += '<p class="source">' + quote.source;
+html += '<p class="tag' + quote.tag;
 if (quote.citation) {
 html += '<span class="citation">' + quote.citation + '</span>';
  }
