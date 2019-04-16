@@ -77,13 +77,14 @@ html += '<p class="tag' + quote.tag;
 if (quote.citation) {
 html += '<span class="citation">' + quote.citation + '</span>';
  }
- if (quote.year) {
-  html += '<span class="year">' + quote.year + '</span>';
+if (quote.year) {
+html += '<span class="year">' + quote.year + '</span>';
+
 
 }
 
 {
-  document.getElementById('quote-box').InnerHTML = quote;
+  document.getElementById('quote-box').InnerHTML = getRandomQuote;
 }
 
 console.log(quote);
