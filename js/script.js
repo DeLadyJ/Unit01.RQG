@@ -68,23 +68,21 @@ function getRandomQuoteColor(){
 
 
 //print function, .innerHTML will get random quote, quote will display
-function printQuote()
-var quote = getRandomQuote;
-var htmlString = ("");
+function printQuote(){ 
+var quote = getRandomQuote();
+ htmlString = ("");
 html += '<p class="quote">' + quote.quote + '<p/>';
 html += '<p class="source">' + quote.source;
 html += '<p class="tag' + quote.tag;
-if (quote.citation) {
-html += '<span class="citation">' + quote.citation + '</span>';
- }
-if (quote.year) {
-html += '<span class="year">' + quote.year + '</span>';
-
-
+document.getElementById('quote-box').InnerHTML = getRandomQuote;
 }
 
-{
-  document.getElementById('quote-box').InnerHTML = getRandomQuote;
+if (quote.citation) {
+html += '<span class="citation">' + quote.citation + '</span>';
+}
+
+if (quote.year) {
+html += '<span class="year">' + quote.year + '</span>';
 }
 
 console.log(quote);
