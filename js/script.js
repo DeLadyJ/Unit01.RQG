@@ -67,13 +67,13 @@ function getRandomQuoteColor(){
   } 
 
 
-//print function, .innerHTML will get random quote, quote will display
+//get code and bring through htm, quote display
 var quotes = getRandomQuote();{
-html = ();
+//html = ();
 html += '<p class="quote">' + quotes.quote + '<p/>';
 html += '<p class="source">' + quotes.source;
 html += '<p class="tag' + quotes.tag ;
-document.getElementById('quote-box').InnerHTML = getRandomQuote;
+Document.getElementById(quote-box) = html; (getRandomQuote);
 }
 
 if (quote.citation) {
