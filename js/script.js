@@ -53,9 +53,11 @@ var quotes  (
  var colors = ['red', 'blue', 'green', 'yellow'];
 //setInterval(('Color'),3000);
   
-//calls a random quote then returns the quote
+//calls a random quote through the html then returns the quote
 function getRandomQuote(){
   let randomNumber = Math.floor(Math.random() * quotes.length);
+    //return quotes[randomNumber];
+    document.getElementById('quote').innerhtml = quotes[randomNumber];
     return quotes[randomNumber];
 }
 
@@ -69,11 +71,11 @@ function getRandomQuoteColor(){
 
 //get code and bring through htm, quote display
 let quotes = getRandomQuote();{
-//html = ();
+html = '<p>';
 html += '<p class="quote">' + quotes.quote + '<p/>';
 html += '<p class="source">' + quotes.source;
 html += '<p class="tag' + quotes.tag ;
-Document.getElementById(quote-box) = html; (getRandomQuote);
+//Document.getElementById(quote-box) = html; (getRandomQuote);
 }
 
 if (quote.citation) {
