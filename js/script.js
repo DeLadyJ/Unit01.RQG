@@ -56,7 +56,7 @@ var quotes  (
 //calls a random quote then returns the quote
 function getRandomQuote(){
   let randomNumber = Math.floor(Math.random() * quotes.length);
-    return quotes(randomNumber);
+    return quotes[randomNumber];
 }
 
 
