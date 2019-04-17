@@ -69,11 +69,11 @@ function getRandomQuoteColor(){
 
 //print function, .innerHTML will get random quote, quote will display
 function printQuote(){ 
-var quote = getRandomQuote();
+var quotes = getRandomQuote();
  htmlString = ("");
-html += '<p class="quote">' + quote.quote + '<p/>';
-html += '<p class="source">' + quote.source;
-html += '<p class="tag' + quote.tag ;
+html += '<p class="quote">' + quotes.quote + '<p/>';
+html += '<p class="source">' + quotes.source;
+html += '<p class="tag' + quotes.tag ;
 document.getElementById('quote-box').InnerHTML = getRandomQuote;
 }
 
