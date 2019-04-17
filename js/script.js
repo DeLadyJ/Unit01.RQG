@@ -68,9 +68,8 @@ function getRandomQuoteColor(){
 
 
 //print function, .innerHTML will get random quote, quote will display
-function printQuote(){ 
-var quotes = getRandomQuote();
- html = ();
+var quotes = getRandomQuote();{
+html = ();
 html += '<p class="quote">' + quotes.quote + '<p/>';
 html += '<p class="source">' + quotes.source;
 html += '<p class="tag' + quotes.tag ;
