@@ -21,7 +21,7 @@ project 1 - A Random Quote Generator
 
 
 // quote array
-var quotes = [
+var quotes  (
   {quote: 'What God intended for you goes far beyond anything you can imagine.',
   source: "Oprah Winfrey",
   tag: "Insporational"},
@@ -43,7 +43,7 @@ var quotes = [
   tag: "Wisdom",
   citation: "Three Little Birds/, from the album Exodus",
   year: "1977"}
-];
+);
 
 //loga quote to console
 //console.log (quote);
@@ -62,8 +62,8 @@ function getRandomQuote(){
 
 //calls a random color then returns the color
 function getRandomQuoteColor(){
-    let randomNumber = Math.floor(Math.random() * color.length);
-      return color(randomNumber);
+    let randomNumber = Math.floor(Math.random() * colors.length);
+      return colors[randomNumber];
   } 
 
 
@@ -73,7 +73,7 @@ var quote = getRandomQuote();
  htmlString = ("");
 html += '<p class="quote">' + quote.quote + '<p/>';
 html += '<p class="source">' + quote.source;
-html += '<p class="tag' + quote.tag;
+html += '<p class="tag' + quote.tag ;
 document.getElementById('quote-box').InnerHTML = getRandomQuote;
 }
 
