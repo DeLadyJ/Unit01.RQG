@@ -68,7 +68,7 @@ function getRandomQuoteColor(){
 
 
 //get code and bring through htm, quote display
-var quotes = getRandomQuote();{
+let quotes = getRandomQuote();{
 //html = ();
 html += '<p class="quote">' + quotes.quote + '<p/>';
 html += '<p class="source">' + quotes.source;
