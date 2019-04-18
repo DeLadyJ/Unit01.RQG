@@ -56,14 +56,8 @@ var quotes  (
 //calls a random quote through the html then returns the quote
 function getRandomQuote(){
   let randomNumber = Math.floor(Math.random() * quotes.length);
-    //return quotes[randomNumber];
-    newFunction();
     return quotes[randomNumber];
-  function newFunction() {
-    document.getElementById('quote').innerhtml = quotes[randomNumber];
   }
-}
-
 
 //calls a random color then returns the color
 function getRandomQuoteColor(){
@@ -89,7 +83,7 @@ if (randomQuote.citation) {
 }
 
 html += '</p>';
-document.getElementById('quote').innerhtml = html;
+document.getElementById('quote-box').innerhtml = html;
 };
 console.log(quote);
 
