@@ -57,8 +57,11 @@ var quotes  (
 function getRandomQuote(){
   let randomNumber = Math.floor(Math.random() * quotes.length);
     //return quotes[randomNumber];
-    document.getElementById('quote').innerhtml = quotes[randomNumber];
+    newFunction();
     return quotes[randomNumber];
+  function newFunction() {
+    document.getElementById('quote').innerhtml = quotes[randomNumber];
+  }
 }
 
 
@@ -86,6 +89,7 @@ if (randomQuote.citation) {
 }
 
 html += '</p>';
+document.getElementById('quote').innerhtml = html;
 };
 console.log(quote);
 
