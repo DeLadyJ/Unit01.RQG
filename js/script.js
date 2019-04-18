@@ -67,8 +67,9 @@ function getRandomQuoteColor(){
 
 
 //prints / displays quote by passing through html
-printQuote = () => {
-let randomQuote = getRandomQuote();
+function printQuote () {
+let randomQuote = getRandomQuote ()
+
 html = "";
 html += '<p class="quote">' + randomQuote.quote + '</p>';
 html += '<p class="source">' + randomQuote.source;
@@ -84,6 +85,7 @@ if (randomQuote.citation) {
 }
 
 document.getElementById('quote-box').innerhtml = html;
+
 };
 
 //This launches the quote when button is clicked
