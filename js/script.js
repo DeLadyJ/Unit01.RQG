@@ -45,8 +45,8 @@ var quotes;  [
   year, '1977']
 ];
 
-//loga quote to console
-//console.log (quote);
+//logs quote to console
+console.log (quote);
 
 
 //colors used for array
