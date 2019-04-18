@@ -70,21 +70,23 @@ function getRandomQuoteColor(){
 
 
 //prints / displays quote
-let quotes = getRandomQuote();{
-html = '<p>';
-html += '<p class="quote">' + quotes.quote + '<p/>';
-html += '<p class="source">' + quotes.source;
-html += '<p class="tag' + quotes.tag ;
+printQuote = () => {
+let randomQuote = getRandomQuote();
+html = "";
+html += '<p class="quote">' + randomQuote.quote + '</p>';
+html += '<p class="source">' + randomQuote.source;
+html += '<p class="tag' + randomQuote.tag ;
 
-if (quote.citation) {
-  html += '<span class="citation">' + quote.citation + '</span>';
+if (randomQuote.citation) {
+  html += '<span class="citation">' + randomQuote.citation + '</span>';
   }
   
-  if (quote.year) {
-  html += '<span class="year">' + quote.year + '</span>';
-  html += '</p>';
+  if (randomQuote.year) {
+  html += '<span class="year">' + randomQuote.year + '</span>';
 }
-}
+
+html += '</p>';
+};
 console.log(quote);
 
 
