@@ -73,6 +73,7 @@ html = "";
 html += '<p class="quote">' + randomQuote.quote + '</p>';
 html += '<p class="source">' + randomQuote.source;
 html += '<p class="tag' + randomQuote.tag ;
+html += '</p>';
 
 if (randomQuote.citation) {
   html += '<span class="citation">' + randomQuote.citation + '</span>';
@@ -82,11 +83,8 @@ if (randomQuote.citation) {
   html += '<span class="year">' + randomQuote.year + '</span>';
 }
 
-html += '</p>';
 document.getElementById('quote-box').innerhtml = html;
 };
-console.log(quote);
-
 
 //This launches the quote when button is clicked
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
