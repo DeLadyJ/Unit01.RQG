@@ -75,17 +75,16 @@ html = '<p>';
 html += '<p class="quote">' + quotes.quote + '<p/>';
 html += '<p class="source">' + quotes.source;
 html += '<p class="tag' + quotes.tag ;
-//Document.getElementById(quote-box) = html; (getRandomQuote);
-}
 
 if (quote.citation) {
-html += '<span class="citation">' + quote.citation + '</span>';
+  html += '<span class="citation">' + quote.citation + '</span>';
+  }
+  
+  if (quote.year) {
+  html += '<span class="year">' + quote.year + '</span>';
+  html += '</p>';
 }
-
-if (quote.year) {
-html += '<span class="year">' + quote.year + '</span>';
 }
-
 console.log(quote);
 
 
