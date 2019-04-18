@@ -53,7 +53,7 @@ var quotes  (
  var colors = ['red', 'blue', 'green', 'yellow'];
 //setInterval(('Color'),3000);
   
-//calls a random quote through the html then returns the quote
+//calls a random quote then returns the quote
 function getRandomQuote(){
   let randomNumber = Math.floor(Math.random() * quotes.length);
     return quotes[randomNumber];
@@ -66,7 +66,7 @@ function getRandomQuoteColor(){
   } 
 
 
-//prints / displays quote
+//prints / displays quote by passing through html
 printQuote = () => {
 let randomQuote = getRandomQuote();
 html = "";
