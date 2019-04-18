@@ -21,29 +21,29 @@ project 1 - A Random Quote Generator
 
 
 // quote array
-var quotes  (
-  {quote: 'What God intended for you goes far beyond anything you can imagine.',
-  source: "Oprah Winfrey",
-  tag: "Insporational"},
+var quotes;  [
+  [quote, 'What God intended for you goes far beyond anything you can imagine.',
+  source, 'Oprah Winfrey',
+  tag, 'Insporational'],
 
-  {quote: 'There are still many causes worth sacrificing for/, so much history yet to be made.',
-  source: "Michelle Obama",
-  tag: "Inspirational"},
+  [quote, 'There are still many causes worth sacrificing for/, so much history yet to be made.',
+  source, 'Michelle Obama',
+  tag, "Inspirational"],
 
-  {quote: 'Positivity/, confidence/, and persistence are key in life/, so never give up on yourself.',
-  source: "Khalid",
-  tag: "Life"},
+  [quote,'Positivity/, confidence/, and persistence are key in life/, so never give up on yourself.',
+  source, 'Khalid',
+  tag, 'Life'],
 
-  {quote: 'I always believed that when you follow your heart or your gut/, when you really follow the things that feel great to you/, you can never lose/, because settling is the worst feeling in the world.',
-  source: "Rihanna",
-  tag: "Life"},
+  [quote, 'I always believed that when you follow your heart or your gut/, when you really follow the things that feel great to you/, you can never lose/, because settling is the worst feeling in the world.',
+  source, 'Rihanna',
+  tag, 'Life'],
   
-  {quote: 'Don/’t worry about a thing/, /‘Cos every little thing is gonna be alright.',
-  source: "Bob Marley", 
-  tag: "Wisdom",
-  citation: "Three Little Birds/, from the album Exodus",
-  year: "1977"}
-);
+  [quote, 'Don/’t worry about a thing/, /‘Cos every little thing is gonna be alright.',
+  source, 'Bob Marley', 
+  tag, 'Wisdom',
+  citation, 'Three Little Birds/, from the album Exodus',
+  year, '1977']
+];
 
 //loga quote to console
 //console.log (quote);
