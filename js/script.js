@@ -65,16 +65,15 @@ function getRandomQuoteColor(){
       return colors[randomNumber];
   } 
 
-
 //prints / displays quote by passing through html
-function printQuote () {
-let randomQuote = getRandomQuote ()
-
-html = "";
-html += '<p class="quote">' + randomQuote.quote + '</p>';
-html += '<p class="source">' + randomQuote.source;
-html += '<p class="tag' + randomQuote.tag ;
-html += '</p>';
+function printQuote() {
+  var randomQuote = getRandomQuote();
+  var display = '';
+  display += '<p class ="quote">' + randomQuote.quote  + '</p>';
+  display += '<p class ="source">' + randomQuote.source  + '</p>';
+  display += '<p class ="tag">' + randomQuote.tag  + '</p>';
+  document.getElementById('quote-box').innerHTML = display;
+  newColor();
 
 if (randomQuote.citation) {
   html += '<span class="citation">' + randomQuote.citation + '</span>';
@@ -84,7 +83,7 @@ if (randomQuote.year) {
   html += '<span class="year">' + randomQuote.year + '</span>';
 }
 
-document.getElementById('quote-box').innerhtml = html;
+document.getElementById('quote-box').innerhtml = display;
 
 };
 
