@@ -55,8 +55,8 @@ console.log (quote);
   
 //calls a random quote then returns the quote
 function getRandomQuote(){
-  let randomNumber = Math.floor(Math.random() * quotes.length);
-    return quotes[randomNumber];
+  let getQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    return getQuote;
   }
 
 //calls a random color then returns the color
