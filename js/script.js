@@ -47,7 +47,7 @@ var quotes =  [
 },
   
   {
-  quote: 'Don\’t worry about a thing\, \‘Cos every little thing is gonna be alright.',
+  quote: 'Don\’t worry about a thing\, \‘Cos every little thing is gonna be alright\.',
   source: 'Bob Marley', 
   tag: 'Wisdom',
   citation: 'Three Little Birds\, from the album Exodus',
