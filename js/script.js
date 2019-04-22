@@ -81,7 +81,7 @@ function printQuote() {
   var html = '';
   html += '<p class ="quote">' + randomQuote.quote  + '</p>';
   html += '<p class ="source">' + randomQuote.source  + '</p>';
-  display += '<p class ="tag">' + randomQuote.tag  + '</p>';
+  html += '<p class ="tag">' + randomQuote.tag  + '</p>';
   document.getElementById('quote-box').innerHTML = html;
   getRandomColor();
 
