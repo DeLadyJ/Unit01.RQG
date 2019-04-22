@@ -28,7 +28,7 @@ var quotes =  [
 
   {quote: 'There are still many causes worth sacrificing for/, so much history yet to be made.',
   source: 'Michelle Obama',
-  tag: "Inspirational"},
+  tag: 'Inspirational'},
 
   {quote:'Positivity/, confidence/, and persistence are key in life/, so never give up on yourself.',
   source: 'Khalid',
@@ -38,15 +38,15 @@ var quotes =  [
   source: 'Rihanna',
   tag: 'Life'},
   
-  {quote: 'Don/’t worry about a thing/, /‘Cos every little thing is gonna be alright.',
-  source: 'Bob Marley', 
-  tag: 'Wisdom',
-  citation: 'Three Little Birds/, from the album Exodus',
-  year: '1977'}
+  //{quote: 'Don/’t worry about a thing/, /‘Cos every little thing is gonna be alright.',
+  //source: 'Bob Marley', 
+  //tag: 'Wisdom',
+  //citation: 'Three Little Birds/, from the album Exodus',
+  //year: '1977'}
 ];
 
 //logs quote to console
-console.log (quotes);
+console.log (quote);
 
 
 //colors used for array
@@ -71,7 +71,7 @@ function printQuote() {
   var html = '';
   html += '<p class ="quote">' + randomQuote.quote  + '</p>';
   html += '<p class ="source">' + randomQuote.source  + '</p>';
-  html += '<p class ="tag">' + randomQuote.tag  + '</p>';
+  display += '<p class ="tag">' + randomQuote.tag  + '</p>';
   document.getElementById('quote-box').innerHTML = html;
   Color();
 
