@@ -23,25 +23,25 @@ project 1 - A Random Quote Generator
 // quote array
 var quotes =  [
   {
-  quote: 'What God intended for you goes far beyond anything you can imagine.',
+  quote: 'What God intended for you goes far beyond anything you can imagine\.',
   source: 'Oprah Winfrey',
   tag: 'Insporational'
 },
  
 {
-  quote: 'There are still many causes worth sacrificing for\, so much history yet to be made.',
+  quote: 'There are still many causes worth sacrificing for\, so much history yet to be made\.',
   source: 'Michelle Obama',
   tag: 'Inspirational'
 },
 
   {
-  quote:'Positivity\, confidence\, and persistence are key in life\, so never give up on yourself.',
+  quote:'Positivity\, confidence\, and persistence are key in life\, so never give up on yourself\.',
   source: 'Khalid',
   tag: 'Life'
 },
 
   {
-  quote: 'I always believed that when you follow your heart or your gut\, when you really follow the things that feel great to you\, you can never lose\, because settling is the worst feeling in the world.',
+  quote: 'I always believed that when you follow your heart or your gut\, when you really follow the things that feel great to you\, you can never lose\, because settling is the worst feeling in the world\.',
   source: 'Rihanna',
   tag: 'Life'
 },
