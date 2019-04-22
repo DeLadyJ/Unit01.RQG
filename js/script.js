@@ -71,8 +71,8 @@ function getRandomQuote(){
 
 //calls a random color then returns the color
 function getRandomQuoteColor(){
-    let randomNumber = Math.floor(Math.random() * colors.length);
-      return colors[randomNumber];
+    let getColor = colors[Math.floor(Math.random() * colors.length)];
+      return getColor;
   } 
 
 //prints / displays quote by passing through html
