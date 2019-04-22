@@ -46,7 +46,7 @@ var quotes =  [
 ];
 
 //logs quote to console
-console.log (quote);
+console.log (quotes);
 
 
 //colors used for array
