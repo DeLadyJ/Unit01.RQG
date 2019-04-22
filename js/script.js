@@ -60,7 +60,7 @@ console.log (quotes);
 
 
 //colors used for array
- //var colors = ['red', 'blue', 'green', 'yellow'];
+ var colors = ['red', 'blue', 'green', 'yellow'];
 //setInterval(('Color'),3000);
   
 //calls a random quote then returns the quote
@@ -70,10 +70,10 @@ function getRandomQuote(){
   }
 
 //calls a random color then returns the color
-//function getRandomQuoteColor(){
-    //let randomNumber = Math.floor(Math.random() * colors.length);
-      //return colors[randomNumber];
-  //} 
+function getRandomQuoteColor(){
+    let randomNumber = Math.floor(Math.random() * colors.length);
+      return colors[randomNumber];
+  } 
 
 //prints / displays quote by passing through html
 function printQuote() {
