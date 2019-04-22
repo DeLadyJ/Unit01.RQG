@@ -83,7 +83,7 @@ function printQuote() {
   html += '<p class ="source">' + randomQuote.source  + '</p>';
   display += '<p class ="tag">' + randomQuote.tag  + '</p>';
   document.getElementById('quote-box').innerHTML = html;
-  Color();
+  getRandomColor();
 
 if (randomQuote.citation) {
   html += '<span class="citation">' + randomQuote.citation + '</span>';
