@@ -68,11 +68,11 @@ function getRandomQuoteColor(){
 //prints / displays quote by passing through html
 function printQuote() {
   var randomQuote = getRandomQuote();
-  var display = '';
-  display += '<p class ="quote">' + randomQuote.quote  + '</p>';
-  display += '<p class ="source">' + randomQuote.source  + '</p>';
-  display += '<p class ="tag">' + randomQuote.tag  + '</p>';
-  document.getElementById('quote-box').innerHTML = display;
+  var html = '';
+  html += '<p class ="quote">' + randomQuote.quote  + '</p>';
+  html += '<p class ="source">' + randomQuote.source  + '</p>';
+  html += '<p class ="tag">' + randomQuote.tag  + '</p>';
+  document.getElementById('quote-box').innerHTML = html;
   Color();
 
 if (randomQuote.citation) {
