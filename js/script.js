@@ -93,7 +93,7 @@ if (randomQuote.year) {
   html += '<span class="year">' + randomQuote.year + '</span>';
 }
 
-document.getElementById('quote-box').innerhtml = display;
+document.getElementById('quote-box').innerHTML = html;
 
 };
 
