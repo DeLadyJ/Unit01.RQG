@@ -25,7 +25,7 @@ var quotes =  [
   {
   quote: 'What God intended for you goes far beyond anything you can imagine\.',
   source: 'Oprah Winfrey',
-  tag: 'Insporational'
+  tag: 'Inspirational'
 },
  
 {
