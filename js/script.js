@@ -58,23 +58,13 @@ var quotes =  [
 //logs quote to console
 console.log (quotes);
 
-
-//colors used for array
- var colors = ['red', 'blue', 'green', 'yellow'];
-//setInterval(('Color'),3000);
   
 //calls a random quote then returns the quote
 function getRandomQuote(){
   let getQuote = quotes[Math.floor(Math.random() * quotes.length)];
     return getQuote;
   }
-
-//calls a random color then returns the color
-function getRandomQuoteColor(){
-    let getColor = colors[Math.floor(Math.random() * colors.length)];
-      return getColor;
-  } 
-
+ 
 //prints / displays quote by passing through html
 function printQuote() {
   var randomQuote = getRandomQuote();
