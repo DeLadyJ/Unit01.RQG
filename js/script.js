@@ -88,11 +88,6 @@ if (randomQuote.citation) {
 if (randomQuote.year) {
   html += '<span class="year">' + randomQuote.year + '</span>';
 }
-
-
-//calls the quote by it's id of quote-box
-//document.getElementById('quote-box').innerHTML = html;
-
 };
 
 //This launches the quote when button is clicked
