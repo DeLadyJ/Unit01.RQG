@@ -65,7 +65,9 @@ function getRandomQuote(){
     return getQuote;
   }
  
-//prints / displays quote by passing through html
+
+//calls the quote by it's id of quote-box
+//displays quote along with source and tag by passing through html
 function printQuote() {
   var randomQuote = getRandomQuote();
   var html = '';
@@ -75,15 +77,21 @@ function printQuote() {
   document.getElementById('quote-box').innerHTML = html;
   getRandomQuote();
 
+
+//displays citation along with quote if qoute has citatio  
 if (randomQuote.citation) {
   html += '<span class="citation">' + randomQuote.citation + '</span>';
   }
   
+
+//displays year along with quote if quote has year  
 if (randomQuote.year) {
   html += '<span class="year">' + randomQuote.year + '</span>';
 }
 
-document.getElementById('quote-box').innerHTML = html;
+
+//calls the quote by it's id of quote-box
+//document.getElementById('quote-box').innerHTML = html;
 
 };
 
