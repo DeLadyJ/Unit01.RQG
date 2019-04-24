@@ -51,7 +51,7 @@ var quotes =  [
   source: 'Bob Marley', 
   tag: 'Wisdom',
   citation: 'Three Little Birds\, from the album Exodus',
-  year: 1977
+  year: '1977'
 }
 ];
 
