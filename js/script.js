@@ -80,7 +80,7 @@ function printQuote() {
 
 //displays tag along with quote if qoute has tag 
 if (randomQuote.tag) {
-html += '<span class="year">' + randomQuote.tag.before, + '</span>';
+html += '<span class="tag">' + randomQuote.tag.before, + '</span>';
 }
 
 //displays citation along with quote if qoute has citation 
