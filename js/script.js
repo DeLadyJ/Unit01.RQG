@@ -74,7 +74,7 @@ function printQuote() {
   html = '<p class ="quote">' + randomQuote.quote + '</p>';
   html += '<p class ="source">' + randomQuote.source;
   htnl += '<span class ="tag">' + randomQuote.tag + '</span>';
-  html += '<span class ="citation">' + randomQuote.citatio + '</span>'
+  html += '<span class ="citation">' + randomQuote.citation + '</span>'
   html += '<span class ="year">' + randomQuote.year + '</span>'
 '</p>';
 
