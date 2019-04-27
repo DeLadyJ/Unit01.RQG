@@ -71,25 +71,27 @@ function getRandomQuote(){
 function printQuote() {
   var randomQuote = getRandomQuote();
   var html = '';
-  html += <p class ="quote"> randomQuote.quote  </p>
-  html += <p class ="source"> randomQuote.source 
-    <span class ="tag"> randomQuote.tag.quote:before, .quote:after </span>
-    <span class ="citation"> randomQuote.citation </span>
-    <span class ="year"> randomQuote.year </span>
-    </p>
+  html = '<p class ="quote">' + randomQuote.quote + '</p>';
+  html += '<p class ="source">' + randomQuote.source;
+  htnl += '<span class ="tag">' + randomQuote.tag + '</span>';
+  html += '<span class ="citation">' + randomQuote.citatio + '</span>'
+  html += '<span class ="year">' + randomQuote.year + '</span>'
+'</p>';
 
-//displays citation along with quote if qoute has citatio  
-if (randomQuote.citation) {
-  html += '<span class="citation">' + randomQuote.citation + '</span>';
-  }
-  
-//displays year along with quote if quote has year  
-if (randomQuote.year) {
-  html += '<span class="year">' + randomQuote.year + '</span>';
+//displays tag along with quote if qoute has tag 
+if (randomQuote.tag) {
+html += '<span class="year">' + randomQuote.tag.before, + '</span>';
 }
 
-document.getElementById('quote-box').innerHTML = html;
-};
+//displays citation along with quote if qoute has citation 
+if (randomQuote.citation) {
+html += '<span class="citation">' + randomQuote.citation.before,after + '</span>';
+}
+
+//displays year along with quote if quote has year  
+if (randomQuote.year) {
+html += '<span class="year">' + randomQuote.year + '</span>';
+}
 
 //This launches the quote when button is clicked
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
