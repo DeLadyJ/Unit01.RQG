@@ -71,23 +71,24 @@ function getRandomQuote(){
 function printQuote() {
   var randomQuote = getRandomQuote();
   var html = '';
-  html += '<p class ="quote">' + randomQuote.quote  + '</p>';
-  html += '<p class ="source">' + randomQuote.source  + '</p>';
-  html += '<p class ="tag">' + randomQuote.tag  + '</p>';
-  document.getElementById('quote-box').innerHTML = html;
- // getRandomQuote();
-
+  html += <p class ="quote"> randomQuote.quote  </p>
+  html += <p class ="source"> randomQuote.source 
+    <span class ="tag"> randomQuote.tag.quote:before, .quote:after </span>
+    <span class ="citation"> randomQuote.citation </span>
+    <span class ="year"> randomQuote.year </span>
+    </p>
 
 //displays citation along with quote if qoute has citatio  
 if (randomQuote.citation) {
   html += '<span class="citation">' + randomQuote.citation + '</span>';
   }
   
-
 //displays year along with quote if quote has year  
 if (randomQuote.year) {
   html += '<span class="year">' + randomQuote.year + '</span>';
 }
+
+document.getElementById('quote-box').innerHTML = html;
 };
 
 //This launches the quote when button is clicked
