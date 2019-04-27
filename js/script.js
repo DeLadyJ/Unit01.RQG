@@ -95,3 +95,4 @@ html += '<span class="year">' + randomQuote.year + '</span>';
 
 //This launches the quote when button is clicked
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+}
