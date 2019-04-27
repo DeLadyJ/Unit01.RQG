@@ -75,7 +75,7 @@ function printQuote() {
   html += '<p class ="source">' + randomQuote.source  + '</p>';
   html += '<p class ="tag">' + randomQuote.tag  + '</p>';
   document.getElementById('quote-box').innerHTML = html;
-  getRandomQuote();
+ // getRandomQuote();
 
 
 //displays citation along with quote if qoute has citatio  
