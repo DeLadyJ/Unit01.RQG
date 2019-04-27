@@ -61,8 +61,8 @@ console.log (quotes);
   
 //calls a random quote then returns the quote
 function getRandomQuote(){
-  let getQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    return getQuote;
+  let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    return randomQuote;
   }
  
 
