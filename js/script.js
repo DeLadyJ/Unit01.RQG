@@ -66,26 +66,27 @@ function getRandomQuote(){
   }
  
 
-//calls the quote by it's id of quote-box
+//calls quote by it's id of quote-box  
 //displays quote along with source and tag by passing through html
+//displays citation along with quote if qoute has citation 
+//displays year along with quote if quote has year 
+//displays tag along with quote if qoute has tag 
+
 function printQuote() {
   var randomQuote = getRandomQuote();
-//displays citation along with quote if qoute has citation 
-//displays year along with quote if quote has year  
-//displays tag along with quote if qoute has tag 
-var html = '<p class = "quote">' + randomQuote.quote + '</p>'
-+ '<p class = "source">' + randomQuote.source;
+  var html = '<p class = "quote">' + randomQuote.quote + '</p>'+
+  '<p class =  "source">' + randomQuote.source;
 if (randomQuote.citation){
-  html += '<span class = "citation", >' + randomQuote.citation + '</span>';
+html += '<span class = "citation", >' + randomQuote.citation + '</span>';
 } 
 if (randomQuote.year){
-  html += '<span class = "year">, ' + randomQuote.year + '</span>';
+html += '<span class = "year">, ' + randomQuote.year + '</span>';
 }
 if (randomQuote.tags){
-  html += '<span class = "tags">, ' + randomQuote.tags + '</span>';
+html += '<span class = "tags">, ' + randomQuote.tags + '</span>';
 }
 else {
-  html += '</p>';
+html += '</p>';
 }
 
   console.log (randomQuote);
