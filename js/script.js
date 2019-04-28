@@ -78,11 +78,6 @@ function printQuote() {
   html += '<span class ="year">' + randomQuote.year + '</span>'
 '</p>';
 
-//displays tag along with quote if qoute has tag 
-if (randomQuote.tag) {
-html += '<span class="tag">' + randomQuote.tag.before, + '</span>';
-}
-
 //displays citation along with quote if qoute has citation 
 if (randomQuote.citation) {
 html += '<span class="citation">' + randomQuote.citation.before,after + '</span>';
@@ -92,6 +87,14 @@ html += '<span class="citation">' + randomQuote.citation.before,after + '</span>
 if (randomQuote.year) {
 html += '<span class="year">' + randomQuote.year + '</span>';
 }
+
+//displays tag along with quote if qoute has tag 
+if (randomQuote.tag) 
+{
+
+  html += '<span class="tag">' + randomQuote.tag + '</span>';
+  }
+
 
 document.getElementById('quote-box').innerHTML = html;
 getRandomQuote();
