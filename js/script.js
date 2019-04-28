@@ -76,7 +76,6 @@ function printQuote() {
   htnl += '<span class ="tag">' + randomQuote.tag + '</span>';
   html += '<span class ="citation">' + randomQuote.citation + '</span>'
   html += '<span class ="year">' + randomQuote.year + '</span>'
-'</p>';
 
 //displays citation along with quote if qoute has citation 
 if (randomQuote.citation) {
@@ -95,7 +94,8 @@ if (randomQuote.tag)
   html += '<span class="tag">' + randomQuote.tag + '</span>';
   }
 
-
+  '</p>';
+  
 document.getElementById('quote-box').innerHTML = html;
 getRandomQuote();
 
