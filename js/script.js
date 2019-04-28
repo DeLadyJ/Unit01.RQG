@@ -93,7 +93,7 @@ if (randomQuote.tag)
 
   '</p>';
 
-  console.log (html);
+  console.log (randomQuote);
 
 document.getElementById('quote-box').innerHTML = html;
 getRandomQuote();
