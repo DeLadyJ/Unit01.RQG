@@ -74,7 +74,7 @@ function getRandomQuote(){
 
 function printQuote() {
   var randomQuote = getRandomQuote();
-  var html = '<p class = "quote">' + randomQuote.quote + '</p>'+
+  var html = '<p class = "quote">' + randomQuote.quote + '</p>' +
   '<p class =  "source">' + randomQuote.source;
 if (randomQuote.citation){
 html += '<span class = "citation", >' + randomQuote.citation + '</span>';
@@ -88,8 +88,6 @@ html += '<span class = "tags">, ' + randomQuote.tags + '</span>';
 else {
 html += '</p>';
 }
-
-  console.log (randomQuote);
 
 document.getElementById('quote-box').innerHTML = html;
 getRandomQuote();
