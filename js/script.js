@@ -88,10 +88,11 @@ html += '<span class = "tags">, ' + randomQuote.tags + '</span>';
 else {
 html += '</p>';
 }
-}
+
 
 document.getElementById('quote-box').innerHTML = html;
 getRandomQuote();
+}
 
 //This launches the quote when button is clicked
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
