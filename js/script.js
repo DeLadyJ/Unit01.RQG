@@ -82,8 +82,8 @@ html += '<span class = "citation", >' + randomQuote.citation + '</span>';
 if (randomQuote.year){
 html += '<span class = "year">, ' + randomQuote.year + '</span>';
 }
-if (randomQuote.tags){
-html += '<span class = "tags">, ' + randomQuote.tags + '</span>';
+if (randomQuote.tag){
+html += '<span class = "tag">, ' + randomQuote.tag + '</span>';
 }
 else {
 html += '</p>';
