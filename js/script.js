@@ -77,7 +77,7 @@ function printQuote() {
   var html = '<p class = "quote">' + randomQuote.quote + '</p>' +
   '<p class =  "source">' + randomQuote.source;
 if (randomQuote.citation){
-html += '<span class = "citation" >' + randomQuote.citation + '</span>';
+html += '<span class = "citation">' + randomQuote.citation + '</span>';
 } 
 if (randomQuote.year){
 html += '<span class = "year"> ' + randomQuote.year + '</span>';
